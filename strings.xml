@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Complaint</string>
+    <string name="email">Email...</string>
+    <string name="password">password</string>
+    <string name="alternatelogin">Already have account?Login</string>
+    <string name="button">Sign up</string>
+    <string name="login">login</string>
+    <string name="alternatesignup">Don\'t have Account?Sign up</string>
+    <string name="forgot">Forgot Password?</string>
+    <string name="buttonforgot">Forgot</string>
+    <string name="complaint">Complaint</string>
+    <string name="profile">Profile</string>
+    <string name="application_name">About Us</string>
+    <string name="textview2">Our Team</string>
+    <string name="t1">This app is about taking the complaints and solving them.This is divided into two main sections namely Halls of Residence and Academics. The division is made for two reasons: convenience, managing data efficiently.
+The Halls of Residence section can be used to register complaints about the problems in the hostels like electricity,water,cleaning etc. and Academics section can be used for complaints about departments,library etc.
+</string>
+    <string name="t2">    Our Team:</string>
+    <string name="t3">
+         Pavan Sai Appari"\t"- 116CS0226"\n"Shashidhar Reddy- 116CS0219"\n"Srikanth Vuppala   - 116CS0239
+ </string>
+</resources>

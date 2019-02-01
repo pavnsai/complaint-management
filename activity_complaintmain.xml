@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="#ffff2461"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ScrollView
+        android:id="@+id/scrollviewid"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#eeeade"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/complaintsubid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="29dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="Enter your Complaint:" />
+
+            <EditText
+                android:id="@+id/complaintid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/edittextstyle"
+                android:ems="10"
+                android:hint="type..."
+                android:maxLines="5"
+                android:padding="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/complaintsubid" />
+
+            <TextView
+                android:id="@+id/selectcategorysubid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:text="Select category:"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/complaintid" />
+
+            <RadioGroup
+                android:id="@+id/categoryradiogroupid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/selectcategorysubid">
+
+                <RadioButton
+                    android:id="@+id/hostelradiobutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hostel" />
+
+                <RadioButton
+                    android:id="@+id/departmentradiobutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Department" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/subcategorysubid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Select:"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/categoryradiogroupid" />
+
+            <RadioGroup
+                android:id="@+id/hosteladvance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="@+id/subcategorysubid"
+                app:layout_constraintTop_toBottomOf="@+id/subcategorysubid">
+                <RadioButton
+                    android:id="@+id/Hall1id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hall-1" />
+                <RadioButton
+                    android:id="@+id/Hall2id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hall-2" />
+                <RadioButton
+                    android:id="@+id/Hall3id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hall-3" />
+                <RadioButton
+                    android:id="@+id/Hall4id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hall-4" />
+                <RadioButton
+                    android:id="@+id/Hall5id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hall-5" />
+
+                <RadioButton
+                    android:id="@+id/Hall6id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hall-6" />
+
+                <RadioButton
+                    android:id="@+id/Hall7id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hall-7" />
+
+                <RadioButton
+                    android:id="@+id/Hall8id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hall-8" />
+
+                <RadioButton
+                    android:id="@+id/Hall9id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hall-9" />
+
+                <RadioButton
+                    android:id="@+id/Hall10id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hall-10" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/departmentadvanceid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/subcategorysubid">
+
+                <RadioButton
+                    android:id="@+id/laid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="L.A" />
+
+                <RadioButton
+                    android:id="@+id/csid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="C.S" />
+
+                <RadioButton
+                    android:id="@+id/ecid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="E.C" />
+                <RadioButton
+                    android:id="@+id/eeid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="E.E" />
+
+                <RadioButton
+                    android:id="@+id/mechid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MECH" />
+
+                <RadioButton
+                    android:id="@+id/chemid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CHEM" />
+                <RadioButton
+                    android:id="@+id/miningid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MINING" />
+                <RadioButton
+                    android:id="@+id/metallurgyid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Metallurgy" />
+
+            </RadioGroup>
+            <EditText
+                android:text="Problem:"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:id="@+id/problemsubid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioGroup
+                android:id="@+id/plumberradiogroupid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/plumberradiobuttonid"
+                    android:text="Plumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/electricianradiobuttonid"
+                    android:text="Electrician"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/carpenterid"
+                    android:text="Carpenter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/registercomplaint"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#CD5C5C"
+                android:text="Register" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

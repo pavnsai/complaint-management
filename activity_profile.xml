@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Button
+        android:id="@+id/buttoncomplaint"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#00FFFF"
+        android:drawableTop="@drawable/complaint"
+        android:text="@string/complaint"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonstatus"
+        app:layout_constraintEnd_toStartOf="@+id/buttonprofile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonprofile"
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#85929E"
+        android:drawableTop="@drawable/profile"
+        android:text="@string/profile"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonfeedback"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttoncomplaint"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonstatus"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#C0C0C0"
+        android:drawableTop="@drawable/status"
+        android:text="status"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonaboutus"
+        app:layout_constraintEnd_toStartOf="@+id/buttonfeedback"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttoncomplaint" />
+
+    <Button
+        android:id="@+id/buttonfeedback"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#808000"
+        android:drawableTop="@drawable/contactus"
+        android:text="Feedback"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonlogout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonstatus"
+        app:layout_constraintTop_toBottomOf="@+id/buttonprofile" />
+
+    <Button
+        android:id="@+id/buttonaboutus"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="64dp"
+        android:background="#566573"
+        android:drawableTop="@drawable/aboutus"
+        android:text="about us"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonlogout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonstatus" />
+
+    <Button
+        android:id="@+id/buttonlogout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="64dp"
+        android:background="#808080"
+        android:drawableTop="@drawable/logout"
+        android:text="logout"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonaboutus"
+        app:layout_constraintTop_toBottomOf="@+id/buttonfeedback" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="384dp"
+        android:layout_height="64dp"
+
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:background="#C0C0C0"
+        android:gravity="center"
+        android:text="© All Rights Reserved"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/buttonaboutus"
+        app:layout_constraintStart_toEndOf="@+id/buttonaboutus"
+        app:layout_constraintTop_toBottomOf="@+id/buttonaboutus" />
+
+
+</android.support.constraint.ConstraintLayout>
